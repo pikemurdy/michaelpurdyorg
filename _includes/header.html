@@ -1,0 +1,50 @@
+<header class="main-header">
+<span class="brand"><a href="/">MichaelPurdy.org</a></span>
+
+<nav>
+  <ul>
+
+
+{% if page.title=="About Michael Purdy" %}
+  <li><a aria-describedby="current" href="#content" class="active">About<!--  Michael and this site<br><small>Background info</small> --></a></li>
+{% else %}
+  <li><a href="/about">About<!--  Michael and this site<br><small>Background info</small> --></a></li>
+{% endif %}
+
+
+{% if page.title=="Books" %}
+  <li> <a aria-describedby="current" href="#content" class="active">Books<!-- <br><small>Wherein I read and review every Faulkner novel</small> --></a></li>
+{% else %}
+  <li> <a href="/books">Books<!-- <br><small>Wherein I read and review every Faulkner novel</small> --></a></li>
+{% endif %}
+
+{% comment %}
+{% if page.title=="Hikes" %}
+  <li> <a aria-describedby="current" href="#content" class="active">Hikes<!-- <br><small>Wherein I read and review every Faulkner novel</small> --></a></li>
+{% else %}
+  <li> <a href="/hikes">Hikes<!-- <br><small>Wherein I read and review every Faulkner novel</small> --></a></li>
+{% endif %}
+{% endcomment %}
+
+
+{% if page.title=="Blog Archive"  %}
+  <li><a aria-describedby="current" href="#content" class="active">Archives {{page.is_post}}<!-- <br><small>All the articles</small> --></a></li>
+{% elsif page.path contains '_posts' %}
+  <li><a aria-describedby="current" href="/archives" class="active">Archives {{page.is_post}}<!-- <br><small>All the articles</small> --></a></li>
+{% else %}
+  <li><a href="/archives">Archives<!-- <br><small>All the articles</small> --></a></li>
+{% endif %}
+
+{% if page.title=="Coming Soon"  %}
+  <li><a aria-describedby="current" href="#content" class="active">Books {{page.is_post}}<br><small>Books I&rsquo;ve written</small></a></li>
+{% else %}
+
+
+{% comment %}
+  <a href="/books">Books</a>
+{% endcomment %}
+
+{% endif %}
+  </ul>
+</nav>
+</header>

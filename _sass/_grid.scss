@@ -1,0 +1,36 @@
+.container {
+  width: calc(100% - 2rem);
+  max-width: 650px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin: auto;
+  transition: 0.5s all ease;
+
+
+
+}
+main {
+  padding-left: 2rem;
+}
+.main-header {
+  padding: $spacer $spacer*2;
+  border-bottom: 1px solid transparentize($red, 0.5);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  transition: transform .5s ease;
+  transform: translateY(0);
+  z-index: 1;
+  &.hide-header {
+    transform: translateY(-100%);
+  }
+}
+
+#footer {
+  margin-top: $spacer *4;
+  border-top: 0.25rem solid $red;
+}

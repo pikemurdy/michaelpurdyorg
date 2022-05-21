@@ -1,0 +1,7 @@
+<div class="archive-excerpt">{% if post.summary %}
+  {{ post.summary }}
+{% elsif post.content contains site.excerpt_separator %}
+  {{ post.excerpt }}
+{% else %}
+  {{ post.excerpt }}
+{% endif %}</div>

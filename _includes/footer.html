@@ -1,0 +1,21 @@
+<footer id="footer"><p class="copyright">Copyright &copy; 2006&ndash;2021 <a href="/">Michael Purdy</a>. <a href="/feed.xml">RSS</a>, <a href="/feed.json">JSON</a>, <a href="/about">Info</a>.</p>
+  <p class="terms"><strong>Terms of Use.</strong> This site is the sole property of Michael Purdy. By reading it, or visiting it, you agree that Michael Purdy exists and you are at least tangentially aware of him. Also, you acknowledge that he is somewhat pleasant and generally means well. Michael Purdy reserves the right, at his sole discretion, to change, modify, add or remove portions of these Terms of Use, at any time. It is your responsibility to check to see if he still exists and if he is still somewhat pleasant and generally meaning well. After all, you may have imagined this whole thing.  Made with love and <a href="https://jekyllrb.com/" target="_blank">Jekyll</a>.</p></footer>
+  
+  
+  <script>
+
+var scrollPosition = window.scrollY;
+var logoContainer = document.getElementsByClassName('main-header')[0];
+window.addEventListener('scroll', function() {
+
+    scrollPosition = window.scrollY;
+
+    if (scrollPosition >= 30) {
+        logoContainer.classList.add('hide-header');
+    } else {
+        logoContainer.classList.remove('hide-header');
+    }
+
+});
+  
+  </script>
